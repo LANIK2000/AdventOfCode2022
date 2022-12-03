@@ -1,7 +1,7 @@
 ﻿string? line;
 
-uint weight = 0;
-List<uint> elves = new();
+int weight = 0;
+List<int> elves = new();
 
 while ((line = Console.ReadLine()) != null) {
 	if (line == "") {
@@ -9,7 +9,7 @@ while ((line = Console.ReadLine()) != null) {
 		weight = 0;
 	}
 	else
-		weight += uint.Parse(line);
+		weight += int.Parse(line);
 }
 
 var top_elves = elves.OrderByDescending(x => x).ToArray();

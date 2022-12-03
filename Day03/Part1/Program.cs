@@ -10,17 +10,14 @@ int priorities_sum = 0;
 
 string? line;
 
-string compartment_1;
-string compartment_2;
-
 while ((line = Console.ReadLine()) != null) {
-	int half_point = line.Length / 2;
-	compartment_1 = line.Substring(0, half_point);
-	compartment_2 = line.Substring(half_point);
+	var half_point = line.Length / 2;
+	var pocket_1 = line.Substring(0, half_point);
+	var pocket_2 = line.Substring(half_point);
 	
-	var common_items = compartment_1.Intersect(compartment_2);
-	foreach (var item in common_items)
+	foreach (var item in pocket_1.Intersect(pocket_2))
 		priorities_sum += getPriority(item);
 }
 
 Console.WriteLine($"Part one: {priorities_sum}");
+
