@@ -1,7 +1,7 @@
 ﻿
-// Rock     A X >> 1
-// Paper    B Y >> 2
-// Scissors C Z >> 3
+// Rock     A X >> 0
+// Paper    B Y >> 1
+// Scissors C Z >> 2
 // Game result key: 0 < 1 < 2 < 0
 
 int getScore(int them, int me)
