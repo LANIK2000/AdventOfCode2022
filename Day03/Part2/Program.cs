@@ -12,8 +12,8 @@ string? line;
 
 while ((line = Console.ReadLine()) != null) {
 	var elf1 = line;
-	var elf2 = Console.ReadLine() ?? throw new System.Exception("Unreachable Code");
-	var elf3 = Console.ReadLine() ?? throw new System.Exception("Unreachable Code");
+	var elf2 = Console.ReadLine() ?? throw new Exception("Unreachable Code");
+	var elf3 = Console.ReadLine() ?? throw new Exception("Unreachable Code");
 	
 	foreach (var item in elf1.Intersect(elf2).Intersect(elf3))
 		priorities_sum += getPriority(item);
