@@ -2,9 +2,9 @@
 // Rock     A X >> 1
 // Paper    B Y >> 2
 // Scissors C Z >> 3
-// Lookup key: 0 < 1 < 2 < 0
+// Game result key: 0 < 1 < 2 < 0
 
-int toScore(int them, int me)
+int getScore(int them, int me)
 	=> 1 + me + (them - me) switch {
 			-2 => 0,// -2 >> 02        LOSE
 			-1 => 6,// -1 >> 12 01     WIN
@@ -24,7 +24,7 @@ while ((line = Console.ReadLine()) != null) {
 	int them = line[0] - 'A';
 	
 	{/* -~={ Part 1 }=~-*/
-		score_part_1 += toScore(them, me);
+		score_part_1 += getScore(them, me);
 	}
 	
 	{/* -~={ Part 2 }=~-*/
@@ -37,11 +37,11 @@ while ((line = Console.ReadLine()) != null) {
 		
 		me = strategy switch { // Handle overflows
 			-1 => 2,
-			3  => 0,
-			_  => strategy
+			 3 => 0,
+			 _ => strategy
 		};
 		
-		score_part_2 += toScore(them, me);
+		score_part_2 += getScore(them, me);
 	}
 }
 
