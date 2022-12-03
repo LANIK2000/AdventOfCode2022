@@ -1,6 +1,6 @@
 ﻿
-int weight = 0;
-List<int> elves = new();
+var weight = 0;
+var elves = new List<int>();
 
 string? line;
 while ((line = Console.ReadLine()) != null) {

@@ -6,7 +6,7 @@ int getPriority(char c) {
 		return c - 'a' + 1;
 }
 
-int priorities_sum = 0;
+var priorities_sum = 0;
 
 string? line;
 while ((line = Console.ReadLine()) != null) {
