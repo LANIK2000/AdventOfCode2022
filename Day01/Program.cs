@@ -13,7 +13,7 @@ while ((line = Console.ReadLine()) != null) {
 		weight += int.Parse(line);
 }
 
-var top_elves = elves.OrderByDescending(x => x).ToArray();
+var top_elves = elves.OrderByDescending(x=>x).Take(3);
 
-Console.WriteLine($"Part one: {top_elves[0]}");
-Console.WriteLine($"Part two: {top_elves[0] + top_elves[1] + top_elves[2]}");
+Console.WriteLine($"Part one: {top_elves.First()}");
+Console.WriteLine($"Part two: {top_elves.Sum()}");
