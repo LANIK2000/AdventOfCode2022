@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KYEGhxkqt6DsItJAzfcIY4Yl6IPlycA8MCuqBvcNaACDU67HqV08n8hemrudpHT9ly3ewLMHaZM/mg80P8mz8w==",
+  "success": true,
+  "projectFilePath": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Part2\\Day03.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LANIK\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.9\\microsoft.netcore.app.ref.6.0.9.nupkg.sha512",
+    "C:\\Users\\LANIK\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.9\\microsoft.netcore.app.host.win-x64.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
