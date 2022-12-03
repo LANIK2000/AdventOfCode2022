@@ -1,4 +1,5 @@
-﻿string? line;
+﻿
+string? line;
 
 int weight = 0;
 List<int> elves = new();
