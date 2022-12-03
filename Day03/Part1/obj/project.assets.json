@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Day03.csproj",
+      "projectUniqueName": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Part1\\Day03.csproj",
       "projectName": "Day03",
-      "projectPath": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Day03.csproj",
+      "projectPath": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Part1\\Day03.csproj",
       "packagesPath": "C:\\Users\\LANIK\\.nuget\\packages\\",
-      "outputPath": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\obj\\",
+      "outputPath": "D:\\cli\\c#\\AdventOfCode2022\\Day03\\Part1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Users\\LANIK\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
