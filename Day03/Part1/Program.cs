@@ -20,4 +20,3 @@ while ((line = Console.ReadLine()) != null) {
 }
 
 Console.WriteLine($"Part one: {priorities_sum}");
-
