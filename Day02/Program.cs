@@ -1,4 +1,5 @@
-﻿
+﻿using System.Diagnostics;
+
 // Rock     A X >> 0
 // Paper    B Y >> 1
 // Scissors C Z >> 2
@@ -11,7 +12,7 @@ int getScore(int them, int me)
 			 0 => 3,//  0 >> 00 11 22  DRAW
 			 1 => 0,//  1 >> 21 10     LOSE
 			 2 => 6,//  2 >> 20        WIN
-			 _ => throw new Exception("Unreachable Code")
+			 _ => throw new UnreachableException()
 		};
 
 var score_part_1 = 0;
@@ -31,7 +32,7 @@ while ((line = Console.ReadLine()) != null) {
 			0 => -1, // LOSE
 			1 =>  0, // DRAW
 			2 =>  1, // WIN
-			_ => throw new Exception("Unreachable Code")
+			_ => throw new UnreachableException()
 		};
 		
 		me = strategy switch { // Handle overflows
