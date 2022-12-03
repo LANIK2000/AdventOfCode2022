@@ -9,7 +9,6 @@ int getPriority(char c) {
 int priorities_sum = 0;
 
 string? line;
-
 while ((line = Console.ReadLine()) != null) {
 	var elf1 = line;
 	var elf2 = Console.ReadLine() ?? throw new Exception("Unreachable Code");

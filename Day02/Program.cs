@@ -14,11 +14,10 @@ int getScore(int them, int me)
 			 _ => throw new Exception("Unreachable Code")
 		};
 
-string? line;
-
 int score_part_1 = 0;
 int score_part_2 = 0;
 
+string? line;
 while ((line = Console.ReadLine()) != null) {
 	var me = line[2] - 'X';
 	var them = line[0] - 'A';

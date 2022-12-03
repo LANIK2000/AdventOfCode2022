@@ -9,7 +9,6 @@ int getPriority(char c) {
 int priorities_sum = 0;
 
 string? line;
-
 while ((line = Console.ReadLine()) != null) {
 	var half_point = line.Length / 2;
 	var pocket_1 = line.Substring(0, half_point);

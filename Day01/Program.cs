@@ -1,9 +1,8 @@
 ﻿
-string? line;
-
 int weight = 0;
 List<int> elves = new();
 
+string? line;
 while ((line = Console.ReadLine()) != null) {
 	if (line == "") {
 		elves.Add(weight);
