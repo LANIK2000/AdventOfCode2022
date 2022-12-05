@@ -18,7 +18,7 @@ string? line;
 while ((line = Console.ReadLine()) != null) {
 	var values = line
 		.Split(new[]{',', '-'})
-		.Select(x => int.Parse(x))
+		.Select(int.Parse)
 		.ToArray().AsSpan();
 	
 	if (rangeOverlapComplete(values))
