@@ -1,4 +1,4 @@
-﻿int IndexOfUniqueSequance(string line, int length) {
+﻿int IndexOfUniqueSequence(string line, int length) {
 	string buffer = "";
 
 	for (int i = 0; i < line.Length; i++) {
@@ -18,5 +18,5 @@
 string line = Console.ReadLine()
 	?? throw new ArgumentException("No line was given.");
 
-Console.WriteLine($"Part one: {IndexOfUniqueSequance(line, 4)}");
-Console.WriteLine($"Part two: {IndexOfUniqueSequance(line, 14)}");
+Console.WriteLine($"Part one: {IndexOfUniqueSequence(line, 4)}");
+Console.WriteLine($"Part two: {IndexOfUniqueSequence(line, 14)}");
